@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <FloatingView/FloatingViewInterface.h>
 
 //! Project version number for FloatingView.
 FOUNDATION_EXPORT double FloatingViewVersionNumber;

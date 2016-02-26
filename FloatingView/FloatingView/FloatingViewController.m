@@ -1,19 +1,18 @@
 //
-//  ViewController.m
-//  HostApp
+//  FloatingViewController.m
+//  FloatingView
 //
 //  Created by lucaiguang on 16/2/26.
 //  Copyright © 2016年 Chazz. All rights reserved.
 //
 
-#import "ViewController.h"
-#import <FloatingView/FloatingView.h>
+#import "FloatingViewController.h"
 
-@interface ViewController ()
+@interface FloatingViewController ()
 
 @end
 
-@implementation ViewController
+@implementation FloatingViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

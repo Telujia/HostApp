@@ -10,6 +10,12 @@
 		C57065411C7F605D000C92CC /* FloatingView.h in Headers */ = {isa = PBXBuildFile; fileRef = C57065401C7F605D000C92CC /* FloatingView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C57065481C7F605D000C92CC /* FloatingView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C570653D1C7F605D000C92CC /* FloatingView.framework */; };
 		C570654D1C7F605D000C92CC /* FloatingViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C570654C1C7F605D000C92CC /* FloatingViewTests.m */; };
+		C57065591C80868C000C92CC /* FloatingViewInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = C57065571C80868C000C92CC /* FloatingViewInterface.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C570655A1C80868C000C92CC /* FloatingViewInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = C57065581C80868C000C92CC /* FloatingViewInterface.m */; };
+		C570655D1C80A0CB000C92CC /* FloatingViewManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C570655B1C80A0CB000C92CC /* FloatingViewManager.h */; };
+		C570655E1C80A0CB000C92CC /* FloatingViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C570655C1C80A0CB000C92CC /* FloatingViewManager.m */; };
+		C57065631C80A50D000C92CC /* FloatingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C57065611C80A50D000C92CC /* FloatingViewController.h */; };
+		C57065641C80A50D000C92CC /* FloatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C57065621C80A50D000C92CC /* FloatingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +35,12 @@
 		C57065471C7F605D000C92CC /* FloatingViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FloatingViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C570654C1C7F605D000C92CC /* FloatingViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FloatingViewTests.m; sourceTree = "<group>"; };
 		C570654E1C7F605D000C92CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C57065571C80868C000C92CC /* FloatingViewInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatingViewInterface.h; sourceTree = "<group>"; };
+		C57065581C80868C000C92CC /* FloatingViewInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloatingViewInterface.m; sourceTree = "<group>"; };
+		C570655B1C80A0CB000C92CC /* FloatingViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatingViewManager.h; sourceTree = "<group>"; };
+		C570655C1C80A0CB000C92CC /* FloatingViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloatingViewManager.m; sourceTree = "<group>"; };
+		C57065611C80A50D000C92CC /* FloatingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatingViewController.h; sourceTree = "<group>"; };
+		C57065621C80A50D000C92CC /* FloatingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloatingViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +84,12 @@
 			isa = PBXGroup;
 			children = (
 				C57065401C7F605D000C92CC /* FloatingView.h */,
+				C57065571C80868C000C92CC /* FloatingViewInterface.h */,
+				C57065581C80868C000C92CC /* FloatingViewInterface.m */,
+				C570655B1C80A0CB000C92CC /* FloatingViewManager.h */,
+				C570655C1C80A0CB000C92CC /* FloatingViewManager.m */,
+				C57065611C80A50D000C92CC /* FloatingViewController.h */,
+				C57065621C80A50D000C92CC /* FloatingViewController.m */,
 				C57065421C7F605D000C92CC /* Info.plist */,
 			);
 			path = FloatingView;
@@ -93,7 +111,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C570655D1C80A0CB000C92CC /* FloatingViewManager.h in Headers */,
+				C57065631C80A50D000C92CC /* FloatingViewController.h in Headers */,
 				C57065411C7F605D000C92CC /* FloatingView.h in Headers */,
+				C57065591C80868C000C92CC /* FloatingViewInterface.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +214,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C570655E1C80A0CB000C92CC /* FloatingViewManager.m in Sources */,
+				C570655A1C80868C000C92CC /* FloatingViewInterface.m in Sources */,
+				C57065641C80A50D000C92CC /* FloatingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +398,7 @@
 				C57065531C7F605D000C92CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C57065541C7F605D000C92CC /* Build configuration list for PBXNativeTarget "FloatingViewTests" */ = {
 			isa = XCConfigurationList;
@@ -382,6 +407,7 @@
 				C57065561C7F605D000C92CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

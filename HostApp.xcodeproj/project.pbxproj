@@ -15,6 +15,7 @@
 		C57065101C7F5FA4000C92CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C570650E1C7F5FA4000C92CC /* LaunchScreen.storyboard */; };
 		C570651B1C7F5FA4000C92CC /* HostAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C570651A1C7F5FA4000C92CC /* HostAppTests.m */; };
 		C57065261C7F5FA4000C92CC /* HostAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C57065251C7F5FA4000C92CC /* HostAppUITests.m */; };
+		C57065601C80A27C000C92CC /* FloatingView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C570655F1C80A27C000C92CC /* FloatingView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		C57065211C7F5FA4000C92CC /* HostAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HostAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C57065251C7F5FA4000C92CC /* HostAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HostAppUITests.m; sourceTree = "<group>"; };
 		C57065271C7F5FA4000C92CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C570655F1C80A27C000C92CC /* FloatingView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FloatingView.framework; path = "FloatingView/build/Debug-iphoneos/FloatingView.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C57065601C80A27C000C92CC /* FloatingView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 		C57064F41C7F5FA3000C92CC = {
 			isa = PBXGroup;
 			children = (
+				C570655F1C80A27C000C92CC /* FloatingView.framework */,
 				C57064FF1C7F5FA3000C92CC /* HostApp */,
 				C57065191C7F5FA4000C92CC /* HostAppTests */,
 				C57065241C7F5FA4000C92CC /* HostAppUITests */,
@@ -413,6 +417,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FloatingView/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = HostApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chazz.HostApp;
@@ -424,6 +432,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FloatingView/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = HostApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chazz.HostApp;
@@ -498,6 +510,7 @@
 				C570652C1C7F5FA4000C92CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C570652D1C7F5FA4000C92CC /* Build configuration list for PBXNativeTarget "HostAppTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +519,7 @@
 				C570652F1C7F5FA4000C92CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C57065301C7F5FA4000C92CC /* Build configuration list for PBXNativeTarget "HostAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +528,7 @@
 				C57065321C7F5FA4000C92CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

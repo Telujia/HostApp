@@ -10,4 +10,6 @@
 
 @interface FloatingViewController : UIViewController
 
+@property (nonatomic, strong) UIImageView *imageView;
+
 @end

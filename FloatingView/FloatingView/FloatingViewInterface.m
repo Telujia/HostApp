@@ -16,7 +16,8 @@
 }
 
 + (void)showWithToken:(NSString *)token eventType:(FloatingViewShowEventType)eventType {
-    
+    FloatingViewManager *manager = [FloatingViewManager shareInstance];
+    manager.eventType = 0;
 }
 
 @end

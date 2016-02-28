@@ -10,6 +10,8 @@
 
 @interface FloatingViewManager : NSObject
 
++ (FloatingViewManager *)shareInstance;
 
+@property (nonatomic, assign) NSUInteger eventType;
 
 @end

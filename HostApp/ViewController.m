@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import <FloatingView/FloatingView.h>
 
 @interface ViewController ()
 
@@ -17,6 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"Host App";
+    self.view.backgroundColor = [UIColor brownColor];
 }
 
 @end

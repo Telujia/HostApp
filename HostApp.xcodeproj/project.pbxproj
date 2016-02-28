@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C529582B1C82062400024B4E /* FloatingView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C529582A1C82062400024B4E /* FloatingView.framework */; };
+		C529582C1C82062400024B4E /* FloatingView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C529582A1C82062400024B4E /* FloatingView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C57065021C7F5FA3000C92CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C57065011C7F5FA3000C92CC /* main.m */; };
 		C57065051C7F5FA4000C92CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C57065041C7F5FA4000C92CC /* AppDelegate.m */; };
 		C57065081C7F5FA4000C92CC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C57065071C7F5FA4000C92CC /* ViewController.m */; };
@@ -15,7 +17,6 @@
 		C57065101C7F5FA4000C92CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C570650E1C7F5FA4000C92CC /* LaunchScreen.storyboard */; };
 		C570651B1C7F5FA4000C92CC /* HostAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C570651A1C7F5FA4000C92CC /* HostAppTests.m */; };
 		C57065261C7F5FA4000C92CC /* HostAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C57065251C7F5FA4000C92CC /* HostAppUITests.m */; };
-		C57065601C80A27C000C92CC /* FloatingView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C570655F1C80A27C000C92CC /* FloatingView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +36,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C529582D1C82062400024B4E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C529582C1C82062400024B4E /* FloatingView.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		C529582A1C82062400024B4E /* FloatingView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FloatingView.framework; path = HostApp/FloatingView.framework; sourceTree = "<group>"; };
 		C57064FD1C7F5FA3000C92CC /* HostApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HostApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C57065011C7F5FA3000C92CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C57065031C7F5FA4000C92CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -52,7 +68,6 @@
 		C57065211C7F5FA4000C92CC /* HostAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HostAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C57065251C7F5FA4000C92CC /* HostAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HostAppUITests.m; sourceTree = "<group>"; };
 		C57065271C7F5FA4000C92CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C570655F1C80A27C000C92CC /* FloatingView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FloatingView.framework; path = "FloatingView/build/Debug-iphoneos/FloatingView.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C57065601C80A27C000C92CC /* FloatingView.framework in Frameworks */,
+				C529582B1C82062400024B4E /* FloatingView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +99,7 @@
 		C57064F41C7F5FA3000C92CC = {
 			isa = PBXGroup;
 			children = (
-				C570655F1C80A27C000C92CC /* FloatingView.framework */,
+				C529582A1C82062400024B4E /* FloatingView.framework */,
 				C57064FF1C7F5FA3000C92CC /* HostApp */,
 				C57065191C7F5FA4000C92CC /* HostAppTests */,
 				C57065241C7F5FA4000C92CC /* HostAppUITests */,
@@ -151,9 +166,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C570652A1C7F5FA4000C92CC /* Build configuration list for PBXNativeTarget "HostApp" */;
 			buildPhases = (
+				C529582E1C828B8700024B4E /* ShellScript */,
 				C57064F91C7F5FA3000C92CC /* Sources */,
 				C57064FA1C7F5FA3000C92CC /* Frameworks */,
 				C57064FB1C7F5FA3000C92CC /* Resources */,
+				C529582D1C82062400024B4E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -268,6 +285,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C529582E1C828B8700024B4E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"${CONFIGURATION_BUILD_DIR}\"\necho \"${SRCROOT}\"\n\ncp -r -f ${CONFIGURATION_BUILD_DIR}/FloatingView.framework ${SRCROOT}/HostApp\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C57064F91C7F5FA3000C92CC /* Sources */ = {
@@ -420,6 +453,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/FloatingView/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/HostApp",
 				);
 				INFOPLIST_FILE = HostApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -435,6 +469,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/FloatingView/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/HostApp",
 				);
 				INFOPLIST_FILE = HostApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
